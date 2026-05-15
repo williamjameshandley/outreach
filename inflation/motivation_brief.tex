@@ -1,0 +1,39 @@
+\begin{frame}
+  \frametitle{Inflation}
+  \framesubtitle{A convenient explanation}
+
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+
+      \begin{enumerate}
+        \item<1-> The CMB is far too uniform
+        \item<2-> It looks like it expanded incredibly rapidly ``long before'' the surface of last scattering.
+        \item<4-> We call this accelerated expansion ``Inflation''
+      \end{enumerate}
+
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+
+      \onslide<3->{
+        \begin{tikzpicture}
+          \begin{axis}[
+              ticks=none,
+              width=\textwidth,
+              height=0.8\textheight,
+              xmin=0,xmax=4,
+              ymin=-2.3,ymax=2.3,
+            ]
+            \addplot [samples=50]{1+tanh(x-2)}; 
+            \addplot [samples=50]{-1-tanh(x-2)}; 
+          \end{axis}
+        \end{tikzpicture}
+      }
+
+    \end{column}
+  \end{columns}
+
+
+
+\end{frame}
+
