@@ -1,0 +1,16 @@
+#!/bin/bash
+# converts an svg file to a png file given the command:
+# $ ./svg2png <filename with svg extension>
+
+# create the name of the output file
+SVGNAME=$1
+PNGNAME=$(echo $1 | sed s/.svg// )".png"
+
+# convert to png
+rsvg-convert $SVGNAME -o $PNGNAME
+
+# make the background white
+convert $PNGNAME -background White -flatten $PNGNAME
+
+# remove the original
+rm $SVGNAME

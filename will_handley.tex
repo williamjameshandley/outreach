@@ -1,33 +1,510 @@
+%        File: Alleyns_260912.tex
+%     Created: Thu Sep 20 10:00 AM 2012 B
+% Last Change: Thu Sep 20 10:00 AM 2012 B
+%
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[Cosmology]%(optional, only for long titles)
+{Cosmology}
+\subtitle{The study of the Universe}
+\author[Handley] % (optional, for multiple authors)
+{Will Handley\\ \small{wh260@cam.ac.uk}}
+\institute[University of Cambridge] % (optional)
+{
+Cavendish Laboratory\\
+University of Cambridge
+}
 
-% Address
-\input{whaddress.tex}
+\date[26.09.12] % (optional)
+{26\textsuperscript{th} September 2012}
+\subject{Cosmology}
 
-% Packages
-\input{whpackages.tex}
 
-% Colours
-\input{whcolours.tex}
 
-% Environments
-\input{whenvironments.tex}
+
+\usepackage{graphicx}
+\usepackage{/home/will/LaTeX/beamer/presentationtools}
+
+
+% Turn off the Navigation symbols
+\beamertemplatenavigationsymbolsempty
+
+
+% Background Colour
+%\setbeamercolor{background canvas}{bg=black}
+% Font Style
+
+%\usepackage{/home/will/LaTeX/beamer/styles/powerpoint}
+\usepackage{/home/will/LaTeX/beamer/styles/Alleyns}
+
+\usepackage{multimedia}
+
+%--------------------------------------------------------------------------------
+
+
+
+
+
 
 
 \begin{document}
 
+% While people are coming in
+\begin{framewbackground}{Images/milky_way.jpg}
+\end{framewbackground}
+
+%-----------------Introduction --------------------------------------------------
+\frame{\titlepage}
+
+\begin{framewbackground}{Images/caius.jpg}
+	\frametitle{My life after Alleyn's}
+	\begin{column}{0.4\textwidth}
+		\begin{itemize}
+			\item Went to Gonville \& Caius College, Cambridge.
+			\item Studied Natural Sciences for 4 years.
+			\item Finished in Experimental \& Theoretical Physics.
+			\item Beginning a PhD in Theoretical Cosmology.
+		\end{itemize}
+	\end{column}
+\end{framewbackground}
+
+
+
+
+
+\begin{framewbackground}{Images/COBE.png}
+	\frametitle{\\	\centerline{\Huge Cosmology}}
+\end{framewbackground}
+
+
+
+
+
+
+
+
 \begin{frame}
-  \titlepage{}
+	\frametitle{What is Cosmology?}
+	\framesubtitle{Cosmology is the study of the universe as a whole}
+	\begin{description}
+		\item[Birth:]{~ ~Is there a beginning of time? What was it like?}
+		\item[Size:]{~ ~How big is the cosmos? Is there an edge?}
+		\item[Shape:]{~ ~What happens as you travel across the universe?}
+		\item[Age:]{~ ~How old is the universe?}
+		\item[Fate:]{~ ~Will everything come to an end?}
+	\end{description}
+\end{frame}
+
+
+%-----------------Our place in the cosmos----------------------------------------
+% define a command for this repeated title
+\newcommand{\secAtitle}{Our Place in the Cosmos}
+
+
+\begin{framewbackground}{Images/Earth.jpg}
+	\frametitle{\secAtitle}
+	\framesubtitle{Earth}
+\end{framewbackground}
+
+\begin{framewbackground}{Images/solar_system1.jpg}
+	\frametitle{\secAtitle}
+	\framesubtitle{The Solar System}
+\end{framewbackground}
+
+\begin{framewbackground}{Images/sun.jpg}
+	\frametitle{\secAtitle}
+	\framesubtitle{Stars}
+\end{framewbackground}
+
+\begin{framewbackground}{Images/star_cluster.jpg}
+	\frametitle{\secAtitle}
+	\framesubtitle{Star Clusters}
+\end{framewbackground}
+
+%\begin{framewbackground}{Images/closest-stars.png}
+%\end{framewbackground}
+
+\begin{framewbackground}{Images/milky_way.jpg}
+	\frametitle{\secAtitle}
+	\framesubtitle{Galaxies}
+\end{framewbackground}
+
+%\begin{framewbackground}{Images/sdss.jpg}
+%	\frametitle{\secAtitle}
+%	\framesubtitle{The Universe}
+%\end{framewbackground}
+
+\plainframe{
+	\movie[width=\textwidth,height=\textheight]{}{ssds_flythrough.avi}	
+	}
+
+\begin{frame}
+	\frametitle{\secAtitle}
+	\framesubtitle{Scales in Astronomy}
+
+	\begin{description}
+		\item[Astronomical Unit (AU):]{\hfill Distance from earth to sun}
+		\item[parsec (pc) / lightyear (ly):]{\hfill Distances between stars}
+		\item[kiloparsec (kpc):]{\hfill Galactic sizes}
+		\item[MegaParsec (Mpc):]{\hfill Galactic separation}
+	\end{description}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------The Big Bang --------------------------------------------------
+\begin{frame}
+	\frametitle{The Big Bang}
+	\includegraphics[width=\textwidth]{Images/Big_Bang.jpg}
 \end{frame}
 
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+	\frametitle{The Big Bang}
+	\framesubtitle{Evidence}
+
+	There are two fundamental observations which led to the first Big Bang Theory being hypothesised and confirmed:
+
+	\begin{itemize}
+		\item Galactic Redshifts
+		\item The Cosmic Microwave Background Radiation
+	\end{itemize}
+	
 \end{frame}
+
+\begin{framewbackground}{Images/HubbleUDF.jpg}
+	\frametitle{The Big Bang}
+	\framesubtitle{Galactic Redshift}
+\end{framewbackground}
+
+\begin{frame}
+	\frametitle{The Big Bang}
+	\framesubtitle{Galactic Redshift}
+	\includegraphics[width=\textwidth]{Images/redshift.png}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{The Big Bang}
+	\framesubtitle{Galactic Redshift}
+
+	It appears that:
+
+	\begin{enumerate}
+		\item All Galaxies are moving away from us
+		\item The Further away they are, the faster they are moving away
+		\item If we were to go to another galaxy, we would see exactly the same thing
+	\end{enumerate}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Big Bang}
+	\framesubtitle{Tracking backward in time\ldots}
+	\centerline{\includegraphics[height=0.8\textheight]{Images/Universe_expansion.png}}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{The Big Bang}
+	\framesubtitle{The Cosmic Microwave Background Radiation}
+	\begin{column}{0.5\textwidth}
+		\begin{itemize}
+			\item Discovered by accident in 1964 by Penzias \& Wilson.
+			\item Experimenting with a supersensitive detector.
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{Images/penzias_wilson.jpg}
+	\end{column}
+
+	\vspace{0.5cm}
+
+	\begin{itemize}
+		\item Thermal radiation fills the universe at a temperature $T\approx3K$
+		\item This is best explained as an `afterglow' of the Big Bang.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Big Bang}
+	\framesubtitle{Common Misconceptions}
+	The Big Bang does {\em NOT} look like this:
+	\includegraphics[width=\textwidth]{Images/bigbangnot.jpg}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Big Bang}
+	\framesubtitle{Common Misconceptions}
+
+	\begin{itemize}
+		\item Despite the name, the Big Bang is not an explosion.
+		\item The Universe is not necessarily expanding into anything.
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Constructing a theory of the Universe}
+	\framesubtitle{Extended Copernican Principle}
+	
+	Philosophically, we expect the universe to be:
+
+	\begin{description}
+		\item[Homogeneous:]{~ No point in the universe is special.}
+		\item[Isotropic:]{~ ~ \  No direction in space is special.}
+	\end{description}
+
+	\vspace{1cm}
+
+	If we demand these condititions we find that there are three types of universe:
+	\begin{itemize}
+		\item Open
+		\item Flat
+		\item Closed
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}
+	\frametitle{The Shape, Size \& Fate of the Universe}
+	\begin{table}
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			\bf Type & Open & Flat & Closed \\
+			\hline
+			\bf Shape & Hyperbolic & Euclidean & Spherical \\
+			\bf Size & $\infty$ &$\infty$ & Finite \\
+			\bf Fate & Expanding & Expanding & Eventual Collapse \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\includegraphics[width=\textwidth]{Images/shape.jpg}
+\end{frame}
+
+
+
+
+\begin{frame}
+	\frametitle{Current Issues in Cosmology}
+	\framesubtitle{}
+
+	There are several outstanding problems in Astrophysics which we do not fully  understand:
+
+	\begin{itemize}
+		\item Dark Matter
+		\item Dark Energy
+		\item $t=0$
+	\end{itemize}
+	
+\end{frame}
+
+
+
+\begin{framewbackground}{Images/NGC.jpg}
+	\frametitle{Dark Matter}
+	\framesubtitle{The Problem}
+\end{framewbackground}
+
+\begin{frame}
+	\frametitle{Dark Matter}
+	\framesubtitle{The Problem}
+
+	\begin{column}{0.5\textwidth}
+		\begin{itemize}
+			\item There appears to be a large amount of matter which we cannot see.
+			\item There are many other reasons for believing in Dark Matter.
+			\item Much effort has been put into trying to find the ``missing matter'' -but so far to no avail.
+			\item Right now it's really just a name for a phenomenon we don't understand yet.
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		~ ~ ~\includegraphics[width=\textwidth]{Images/zwicky.jpg}	
+	\end{column}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{The Shape, Size \& Fate of the Universe}
+	\begin{table}
+		\centering
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			\bf Type & Open & Flat & Closed \\
+			\hline
+			\bf Shape & Hyperbolic & Euclidean & Spherical \\
+			\bf Size & $\infty$ &$\infty$ & Finite \\
+			\bf Fate & Expanding & Expanding & Eventual Collapse \\
+			\hline
+		\end{tabular}
+	\end{table}
+	\includegraphics[width=\textwidth]{Images/shape.jpg}
+\end{frame}
+
+\begin{framewbackground}{Images/tycho.jpg}
+	\frametitle{Dark Energy}
+	\framesubtitle{The Problem}
+\end{framewbackground}
+
+\begin{framewbackground}{Images/HubbleUDF.jpg}
+	\frametitle{Dark Energy}
+	\framesubtitle{The Problem}
+\end{framewbackground}
+
+
+\begin{frame}
+	\frametitle{Dark Energy}
+	\framesubtitle{The Problem}
+	\begin{itemize}
+		\item The Universe is not slowing down in it's expansion, but {\em speeding up!}
+		\item One of the ways in which this could happen would be the presence of an energy permeating the universe,  accelerating the expansion.
+		\item We call this Dark Energy
+		\item Like Dark Matter, it's really just a name for a phenomenon which we observe, and haven't been able to explain yet
+	\end{itemize}
+\end{frame}
+
+
+%-----------------Overview ------------------------------------------------------
+\begin{frame}
+	\frametitle{The Composition of the Universe}
+	\includegraphics[width=\textwidth]{Images/Cosmological_Composition_Pie_Chart.png}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------My PhD --------------------------------------------------------
+\begin{frame}
+	\frametitle{My Research}
+	\begin{column}{0.3\textwidth}
+		\begin{itemize}
+			\item Bayesian Cosmology	
+			\item Interface between observation and theory
+			\item Geometric Algebra
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.7\textwidth}
+	\hfill \includegraphics[height=.9\textheight]{Images/likelihood_plot.png}
+	\end{column}
+\end{frame}
+
+
+
+
+
+
+
+
+%-----------------Why is Astronomy important-------------------------------------
+\begin{frame}
+	\frametitle{Why is Astronomy important?}
+	\framesubtitle{Why put money into research which is explicitly useless?}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Why is Astronomy important?}
+	\framesubtitle{Why put money into research which is explicitly useless?}
+	\begin{enumerate}
+		\item The techniques which we create in order to study these systems are {\em very} useful. \label{enum:techniques}
+		\item If there is a theoretical advance in Quantum Gravity, the experimental proof will come from Cosmology. \label{enum:qg}
+		\item Discovery is important. \label{enum:discovery}
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why is Astronomy important?}
+	\framesubtitle{\ref{enum:techniques}.  Theoretical \& Computational Techniques}
+	\begin{itemize}
+		\item Massive Projects generate novel ideas in computing, instrumentation and theory.
+		\item e.g:\ The Square Kilometer Array
+			\begin{itemize}
+				\item Radio telescope to be built in South Africa and New Zealand.
+				\item Will generate PBs of data per second $\sim100$ times global internet traffic.
+				%\item We are building the world's biggest supercomputer to deal with this\ldo 
+			\end{itemize}
+	\end{itemize}
+	\includegraphics[width=\textwidth]{Images/ska.jpg}
+\end{frame}
+
+\begin{frame}
+	
+	\frametitle{Why is Astronomy important?}
+	\framesubtitle{\ref{enum:techniques}.  Theoretical \& Computational Techniques}
+	Historically, Astronomy has provided important stepping stones for human progress;
+	\begin{itemize}
+		\item Calendars \& timekeeping
+		\item Much of mathematics
+			\begin{itemize}
+				\item Hipparchus $\rightarrow$ Trigonometry
+				\item Newton $\rightarrow$ Calculus
+				\item Logarithms
+			\end{itemize}
+		\item Navigational techniques
+		\item Driving development of computers
+		\item Space Age
+		\item Radio astronomy $\rightarrow$ communications
+		\item Optical Astronomy $\rightarrow$ medical imaging
+		\item \ldots
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why is Astronomy important?}
+	\framesubtitle{\ref{enum:qg}.  Quantum Gravity}
+
+	\begin{column}{0.6\textwidth}
+	\begin{itemize}
+		\item Quantum Mechanics and General Relativity are fundamentally incompatible.
+		\item To create a unified theory, we should study a system which needs both.
+		\item The big bang provides an ideal particle accelerator.
+		\item Cosmology is the perfect playground to test out \& discover quantum theories of gravity.
+	\end{itemize}
+	\end{column}
+	\begin{column}{0.4\textwidth}
+	\includegraphics[width=\textwidth]{Images/calabiyau.png}
+	\end{column}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Why is Astronomy important?}
+	\framesubtitle{\ref{enum:discovery}.  Discovery}
+
+	\begin{itemize}
+		\item The search for new things is part of what makes us fundamentally human. 
+		\item We can't know what's possible until we find it.
+	\end{itemize}
+\end{frame}
+
+\begin{framewbackground}{Images/COBE.png}
+\end{framewbackground}
 
 \end{document}
+
+
