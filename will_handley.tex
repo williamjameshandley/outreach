@@ -1,10 +1,10 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[Intro to Astro]
+{Introduction to Astrophysics}
+\subtitle{Cosmology: Beyond the Milky Way}
+\date[27.05.15]
+{20\textsuperscript{th} May 2015}
 
 % Address
 \input{whaddress.tex}
@@ -19,15 +19,92 @@
 \input{whenvironments.tex}
 
 
+
+
 \begin{document}
 
-\begin{frame}
-  \titlepage{}
-\end{frame}
+\begin{frameb}{w}{Images/milky_way.jpg}
+\end{frameb}
 
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+	\titlepage
 \end{frame}
+
+\section{What is Cosmology?}
+\input{what_is_cosmology/questions.tex}
+
+\section{Our Place in the Cosmos}
+\input{zoom_out/to_the_cmb.tex}
+
+\begin{frame}
+  \frametitle{What is the CMB?}
+  \begin{itemize}
+    \item In order to understand what this CMB radiation is, we need to dispel some common misconceptions associated with ``The Big Bang''.
+  \end{itemize}
+\end{frame}
+
+\section{The Big Bang}
+\input{the_big_bang/the_big_bang_briefer.tex}
+\begin{frameb}{w}{Images/spt_cmb.png} 
+\end{frameb}
+
+\input{current_issues/current_issues_brief.tex}
+
+\section{Dark Matter}
+\input{dark_matter/dark_matter_brief.tex}
+
+\section{Dark Energy}
+\input{dark_energy/dark_energy_15.tex}
+
+\begin{frame}
+  \frametitle{Dark matter and Dark Energy as a prediction}
+  In general, if you encounter a discrepancy between theory and observation, there are two options:
+  \begin{itemize}
+    \pause\item Modify the theory
+    \pause\item Predict a new object
+  \end{itemize}
+\end{frame}
+
+\input{science/need_for_new_theory.tex}
+
+\section{$t=0$}
+\begin{frame}
+  \frametitle{The beginning of time}
+  \framesubtitle{$t=0$}
+  \centerline{%
+    \includegraphics[width=\paperwidth]{Images/History_of_the_Early_Universe.png}
+  }
+\end{frame}
+
+\section{Modern Astronomy}
+\begin{frame}
+\frametitle{The dawn of a new era in astronomy}
+\framesubtitle{The rise of the mega-telescope}
+\begin{itemize}
+\pause\item Euclid Satellite
+\pause\item European Extremely Large Telescope
+\pause\item Square Kilometre Array
+\end{itemize}
+\end{frame}
+
+\input{instrumentation/Euclid_brief.tex}
+\input{instrumentation/EELT_brief.tex}
+\input{instrumentation/SKA_brief.tex}
+
+\begin{frame}
+\frametitle{Summary}
+\includegraphics[width=\textwidth]{Images/planckdata.jpg}
+\begin{itemize}
+\pause\item Modern Astrophysics sits in a very privileged position:
+\pause\item There are many unsolved theoretical problems,
+\pause\item And a wealth of data to explore them with.
+\end{itemize}
+
+\end{frame}
+
+
+\againframe<7->{what_is_cosmology}
+
+
 
 \end{document}

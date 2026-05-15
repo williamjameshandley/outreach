@@ -1,0 +1,273 @@
+\def\nsamp{500}
+\begin{frame}
+  \frametitle{Dark Energy}
+  \framesubtitle{First things first\ldots}
+
+  \only<2->{%
+    \centerline{%
+      \Huge
+      Dark Energy $\ne$ Dark Matter
+    }
+  }
+  \vspace{50pt}
+  \begin{itemize}
+    \item<3-> There is no {\em a priori\/} reason to assume that these are related.
+    \item<4-> Dark matter: 1930's
+    \item<5-> Dark energy: 1990's
+  \end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Universal consequences of gravity}
+  \framesubtitle{Thought experiment}
+
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+      \begin{itemize}
+        \item<3-> Place galaxies at rest.
+        \item<4-> Gravity attracts.
+        \item<6-> Universal collapse.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.7\textwidth}
+      \includegraphics<2-4>[page=1,width=\textwidth]{Images/attraction.pdf}
+      \includegraphics<5-6>[page=2,width=\textwidth]{Images/attraction.pdf}
+      \includegraphics<7>[page=3,width=\textwidth]{Images/attraction.pdf}
+      \includegraphics<8>[page=4,width=\textwidth]{Images/attraction.pdf}
+      \includegraphics<9>[page=5,width=\textwidth]{Images/attraction.pdf}
+    \end{column}
+  \end{columns}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{The consequences for the universe}
+  \framesubtitle{Reality}
+
+  \begin{itemize}
+    \item<1-> We know that galaxies are currently moving apart.
+    \item<2-> Previous argument $\Rightarrow$ expansion slowing down
+    \item<3-> This suggests two possibilities\ldots
+  \end{itemize}
+
+\end{frame}
+
+
+\pgfplotsset{every axis/.append style={
+  axis line style={-,color=LightBlue,very thick}, % arrows on the axis
+  xlabel={Time},          % default put x on x-axis
+  ylabel={Distance between galaxies},          % default put y on y-axis
+}}
+
+\def\olde{0.99}
+\def\omde{0.01}
+
+\def\omc{5.5}
+\def\okc{-4.5}
+
+\def\omo{0.5}
+\def\oko{0.5}
+
+\def\pii{3.1415926}
+
+
+\begin{frame}
+  \frametitle{The evolution of the universe}
+  \framesubtitle{Two possibilities}
+
+  \begin{tikzpicture}[
+      declare function={%
+        arcsinh(\x) = ln(\x + sqrt(\x^2+1.0));
+        arcsin(\x) = \pii/180.0 * asin(\x);
+        open0(\x,\om,\ok) = (sqrt(\x*\om*(\x*\ok+\om))-\om*sqrt(\om/\ok)*arcsinh(sqrt(\x*\ok/\om)))/\ok/sqrt(\om);
+        open(\x,\om,\ok) = open0(\x,\om,\ok) - open0(1.0,\om,\ok);
+        closed0(\x,\om,\ok) = (\ok*sqrt(\x*(\x*\ok + \om)) + sqrt(-\ok)*\omc*arcsin(sqrt(-\x*\ok/\om)))/\ok^2;
+        closed(\x,\om,\ok) = closed0(\x,\om,\ok)-closed0(1.0,\om,\ok);
+        tclose(\om,\ok) = \pii*\om/(-\ok)^1.5;
+        maxa(\om,\ok) = -\om/\ok;
+        mint(\omc,\okc,\omo,\oko) = min(closed(0.0,\omc,\okc),open(0.0,\omo,\oko));
+        maxt(\om,\ok) = tclose(\omc,\okc) - closed0(1.0,\om,\ok);
+      },
+    ]
+    \begin{axis}[
+        ticks=none,
+        width=0.9\textwidth,
+        height=0.8\textheight,
+        xmin={1.1*mint(\omc,\okc,\omo,\oko)},xmax={maxt(\omc,\okc)*1.1},
+        ymin=0,ymax=2
+      ]
+
+      \only<3-5,10->{%
+        \addplot[domain=0:{maxa(\omc,\okc)},samples=\nsamp,color=red,very thick]({closed(x,\omc,\okc)},{x}); 
+        \addplot[domain=0:{maxa(\omc,\okc)},samples=\nsamp,color=red,very thick]({tclose(\omc,\okc)-closed0(x,\omc,\okc)-closed0(1.0,\omc,\okc)},{x}); 
+
+        \addplot[domain=-0.035:0.035,samples=2,color=red,very thick]({x+tclose(\omc,\okc)/2.0-closed0(1.0,\omc,\okc)},{maxa(\omc,\okc)}); 
+      }
+      \draw<4-5,7-8> (axis cs:{closed(0.0,\omc,\okc)},0.0) node [above right] {Big Bang};
+      \draw<5> (axis cs:{maxt(\omc,\okc)},0.0) node [above left] {Big Crunch};
+
+
+      \only<6-8,11->{%
+        \addplot [domain=0:2,samples=\nsamp,color=blue,very thick]({open(x,\omo,\oko)},{x}); 
+      }
+      \draw<8> (axis cs:{maxt(\omc,\okc)*0.5},1.8) node [left]  {Expands forever};
+
+      \draw<2-> (axis cs:0.0,1.0) node [below right] {Now};
+      \only<2->{%
+        \addplot[domain=-0.1:0.1,samples=\nsamp,color=white,very thick]({x},{1.0+x});
+      }
+
+
+    \end{axis}
+  \end{tikzpicture}
+\end{frame}
+
+
+
+
+
+\begin{frameb}{w}{Images/tycho.jpg}
+  \frametitle{Exploding stars}
+  \framesubtitle{Type IA Supernovae}
+\end{frameb}
+
+
+
+\begin{frame}
+  \frametitle{The evolution of the universe}
+  \framesubtitle{Which is it?}
+
+  \begin{tikzpicture}[
+      declare function={%
+        arcsinh(\x) = ln(\x + sqrt(\x^2+1.0));
+        arcsin(\x) = \pii/180.0 * asin(\x);
+        de0(\x,\om,\ol) = 2.0/3.0/sqrt(\ol) * arcsinh(sqrt(\x^3*\ol/\om));
+        de(\x,\om,\ol) = de0(\x,\om,\ol) -de0(1.0,\om,\ol);
+        open0(\x,\om,\ok) = (sqrt(\x*\om*(\x*\ok+\om))-\om*sqrt(\om/\ok)*arcsinh(sqrt(\x*\ok/\om)))/\ok/sqrt(\om);
+        open(\x,\om,\ok) = open0(\x,\om,\ok) - open0(1.0,\om,\ok);
+        closed0(\x,\om,\ok) = (\ok*sqrt(\x*(\x*\ok + \om)) + sqrt(-\ok)*\omc*arcsin(sqrt(-\x*\ok/\om)))/\ok^2;
+        closed(\x,\om,\ok) = closed0(\x,\om,\ok)-closed0(1.0,\om,\ok);
+        tclose(\om,\ok) = \pii*\om/(-\ok)^1.5;
+        maxa(\om,\ok) = -\om/\ok;
+        mint(\olde,\omde,\omc,\okc,\omo,\oko) = min(closed(0.0,\omc,\okc),open(0.0,\omo,\oko),de(0.0,\omde,\olde));
+        maxt(\om,\ok) = tclose(\omc,\okc) - closed0(1.0,\om,\ok);
+      },
+    ]
+    \begin{axis}[
+        ticks=none,
+        width=0.9\textwidth,
+        height=0.8\textheight,
+        xmin={1.1*mint(\olde,\omde,\omc,\okc,\omo,\oko)},xmax={maxt(\omc,\okc)*1.1},
+        ymin=0,ymax=2
+      ]
+      \addplot [domain=0:2,samples=\nsamp,color=blue,very thick]({open(x,\omo,\oko)},{x}); 
+
+      \addplot [domain=0:{maxa(\omc,\okc)},samples=\nsamp,color=red,very thick]({closed(x,\omc,\okc)},{x}); 
+      \addplot [domain=0:{maxa(\omc,\okc)},samples=\nsamp,color=red,very thick]({tclose(\omc,\okc)-closed0(x,\omc,\okc)-closed0(1.0,\omc,\okc)},{x}); 
+
+      \addplot [domain=-0.035:0.035,samples=2,color=red,very thick]({x+tclose(\omc,\okc)/2.0-closed0(1.0,\omc,\okc)},{maxa(\omc,\okc)}); 
+
+      \addplot [domain=-0.1:0.1,samples=2,color=white,very thick]({x},{1.0+x});
+
+      \tikzstyle{sn}=[star, star points=8, star point ratio=0.1, minimum size=0.1, draw ];
+
+      \draw<2-10>(axis cs:{de(0.9,\omde,\olde)},0.9) node[sn] {};
+      \draw<3-10>(axis cs:{de(0.8,\omde,\olde)},0.8) node[sn] {};
+      \draw<4-10>(axis cs:{de(0.7,\omde,\olde)},0.7) node[sn] {};
+      \draw<5-10>(axis cs:{de(0.6,\omde,\olde)},0.6) node[sn] {};
+      \draw<6-10>(axis cs:{de(0.5,\omde,\olde)},0.5) node[sn] {};
+      \draw<7-10>(axis cs:{de(0.4,\omde,\olde)},0.4) node[sn] {};
+      \draw<8-10>(axis cs:{de(0.3,\omde,\olde)},0.3) node[sn] {};
+      \draw<9-10>(axis cs:{de(0.2,\omde,\olde)},0.2) node[sn] {};
+      \draw<10  >(axis cs:{de(0.1,\omde,\olde)},0.1) node[sn] {};
+
+
+      \only<11->{%
+        \addplot [domain=0:1,samples=\nsamp,very thick]({de(x,\omde,\olde)},{x}); 
+      }
+      \only<12->{%
+        \addplot [domain=1:2,samples=\nsamp,very thick]({de(x,\omde,\olde)},{x}); 
+      }
+
+
+    \end{axis}
+  \end{tikzpicture}
+\end{frame}
+
+
+
+
+\begin{frame}
+  \frametitle{Accelerated expansion}
+  \framesubtitle{\ldots none of the above}
+  \begin{itemize}
+    \item<2-> At some point in the past ($\approx$4bya) the universe's expansion started speeding up!
+    \item<3-> In stark constrast to what we predicted.
+    \item<4-> As if some ``force'' is driving the increased expansion.
+    \item<5-> Or, as if space itself has some inherant ``springyness'' pushing everything apart.
+  \end{itemize}
+  \centerline{%
+    \includegraphics[width=0.7\textwidth]{Images/dark_energy.jpg}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Dark Energy}
+  \begin{itemize}
+    \item<2-> We attribute this accelerated expansion to a quantity we call {\em Dark Energy}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What actually is Dark Energy?}
+  \begin{itemize}
+    \item<1-> Short answer: \only<2->{We don't know!}
+    \item<3-> Technical answer: \\ Anything producing a large scale, diffuse, (negative) pressure.
+      %\item<4-> This would be some quantum field which provides a force to push the universe apart.
+    \item<4-> It makes up most of the universe ($\approx 70\%$).
+    \item<6-> But also very rare ($\approx 1\mathrm{mg}$ in Earth volume)
+  \end{itemize}
+  \onslide<5->{\includegraphics[height=0.4\textheight]{Images/composition.jpg}}
+  \hspace{10pt}
+  \onslide<7->{\includegraphics[height=0.4\textheight]{Images/atlas.jpg}}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{What could this all pervading energy be?}
+  \framesubtitle{Common interpretation}
+  \begin{itemize}
+    \item<2-> Dark energy is likely to be some form of quantum field, generating a universal expansion force.
+    \item<3-> Higgs Field/Higgs Boson?
+    \item<4-> Nope. Factor of $10^{120}$ too much energy in Higgs field.
+    \item<5-> $1,000,000,000,000,000,000,000,000,000,000,$
+      $\phantom{1,}000,000,000,000,000,000,000,000,000,000,$
+      $\phantom{1,}000,000,000,000,000,000,000,000,000,000,$
+      $\phantom{1,}000,000,000,000,000,000,000,000,000,000$
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Dark Energy\ldots}
+  \framesubtitle{\ldots or Cosmological Constant?}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item<1-> Einstein's gravity can be repulsive at large scales.
+        \item<2-> This is known as a cosmological constant.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{tikzpicture}
+        \node<1-> (img1) {\includegraphics[height=4cm]{Images/young_einstein.jpg}};
+        \node<2-> (img2) at (img1.south east) [xshift=1cm] {\includegraphics[height=4cm]{Images/nobel_einstein.png}};
+        \node<3-> (img3) at (img2.south west) [xshift=-1cm,yshift=1cm] {\includegraphics[height=4cm]{Images/old_einstein.jpg}};
+      \end{tikzpicture}
+    \end{column}
+  \end{columns}
+
+\end{frame}
