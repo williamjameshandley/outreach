@@ -6,83 +6,88 @@ For academic talks see [williamjameshandley/talks](https://github.com/williamjam
 
 ## Outreach talks
 
-1. The CMB: "Hubble 2.0"
-    - Sherrington School
-    - [PDF](https://github.com/williamjameshandley/outreach/raw/sherrington_jwst_2023/will_handley_sherrington_jwst_2023.pdf)
-    - [source](https://github.com/williamjameshandley/outreach/tree/sherrington_jwst_2023)
-    - _Oct 2023_
-2. Tensions in the Universe: a crisis in precision cosmology?
+1. Tensions in the Universe: a crisis in precision cosmology?
     - Cambridge University Physics Society
     - [PDF](https://github.com/williamjameshandley/outreach/raw/cups_2023/will_handley_cups_2023.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/cups_2023)
-    - _Oct 2023_
-3. Cosmology: a scientist's history of the universe
-    - Sherrington School
+    - _25 Oct 2023_
+2. Cosmology: A Scientist's History of the Universe
+    - Sherrington Society, Gonville & Caius College, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/sherrington_2022/will_handley_sherrington_2022.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/sherrington_2022)
-    - _Oct 2022_
-4. Observing the Big Bang: a short history of nearly nothing
-    - Perse School, Cambridge
+    - _31 Oct 2022_
+3. Observing the Big Bang: a short history of nearly nothing
+    - Public talk, Belgium (also at Perse School, Cambridge)
     - [PDF](https://github.com/williamjameshandley/outreach/raw/perse_2018/will_handley_perse_2018.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/perse_2018)
-    - _Sep 2018_
-5. Observing the Big Bang: a short history of nearly nothing
+    - _21 Sep 2018_
+4. Observing the Big Bang: a short history of nearly nothing
     - Gonville & Caius College, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/caius_2017/will_handley_caius_2017.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/caius_2017)
-    - _May 2017_
-6. Cosmology: from CMB to astrophysics
+    - _2 May 2017_
+5. Cosmology: from CMB to astrophysics
     - Kavli Institute for Cosmology, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/kavli_2016/will_handley_kavli_2016.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/kavli_2016)
     - _Apr 2016_
-7. Intro to Astronomy: Beyond the Milky Way
-    - Public lecture
+6. Intro to Astronomy: Beyond the Milky Way
+    - IoA Public Talk, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/intro_to_astro_2015/will_handley_intro_to_astro_2015.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/intro_to_astro_2015)
-    - _May 2015_
-8. To infinity and beyond: Dark Energy
-    - Pint of Science
+    - _27 May 2015_
+7. To infinity and beyond: Dark Energy
+    - Pint of Science, Cambridge Brewhouse
     - [PDF](https://github.com/williamjameshandley/outreach/raw/pint_of_science_2015/will_handley_pint_of_science_2015.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/pint_of_science_2015)
-    - _May 2015_
+    - _20 May 2015_
+8. The Physics of Juggling
+    - Senior Physics Challenge, Churchill College, Cambridge
+    - [PDF](https://github.com/williamjameshandley/outreach/raw/churchill_2015/will_handley_churchill_2015.pdf)
+    - [source](https://github.com/williamjameshandley/outreach/tree/churchill_2015)
+    - _1 Jul 2015_
 9. The Cosmic Microwave Background: our probe of the birth of the universe
-    - Institute of Astronomy, Cambridge
+    - IoA Public Evening, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/ioa_cmb_2015/will_handley_ioa_cmb_2015.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/ioa_cmb_2015)
-    - _Jan 2015_
-10. Dark matter and dark energy: composition and fate
-    - Letchworth
+    - _14 Jan 2015_
+10. Dark Matter and Dark Energy: composition and fate of the universe
+    - Letchworth & District Astronomical Society
     - [PDF](https://github.com/williamjameshandley/outreach/raw/letchworth_2014/will_handley_letchworth_2014.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/letchworth_2014)
-    - _Nov 2014_
-11. Galaxies and beyond
-    - Public lecture
+    - _26 Nov 2014_
+11. The Big Bang and Inflation: the first 0.00000000000000000000000000000001 seconds
+    - Cosmology@KICC outreach event, Cambridge
+    - [PDF](https://github.com/williamjameshandley/outreach/raw/kicc_inflation_2014/will_handley_kicc_inflation_2014.pdf)
+    - [source](https://github.com/williamjameshandley/outreach/tree/kicc_inflation_2014)
+    - _16 Sep 2014_
+12. Galaxies and beyond
+    - IoA Intro to Astronomy course, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/intro_to_astro_2014/will_handley_intro_to_astro_2014.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/intro_to_astro_2014)
-    - _May 2014_
-12. Inflation: extreme expansion in the very earliest universe
-    - Institute of Astronomy, Cambridge
+    - _28 May 2014_
+13. Inflation: extreme expansion in the very earliest universe
+    - IoA Public Evening, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/ioa_inflation_2014/will_handley_ioa_inflation_2014.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/ioa_inflation_2014)
-    - _Mar 2014_
-13. The Big Bang and Inflation
-    - KICC, Cambridge
-    - [PDF](https://github.com/williamjameshandley/outreach/raw/kicc_inflation_2013/will_handley_kicc_inflation_2013.pdf)
-    - [source](https://github.com/williamjameshandley/outreach/tree/kicc_inflation_2013)
-    - _2013_
+    - _19 Mar 2014_
 14. Dark matter and dark energy: common misconceptions
-    - Institute of Astronomy, Cambridge
+    - IoA Public Evening, Cambridge
     - [PDF](https://github.com/williamjameshandley/outreach/raw/ioa_dark_matter_2013/will_handley_ioa_dark_matter_2013.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/ioa_dark_matter_2013)
-    - _Oct 2013_
-15. The universe in 15 minutes
-    - Public talk
+    - _2 Oct 2013_
+15. Cosmology: The physics of the universe
+    - IoA Intro to Astronomy course, Cambridge
+    - [PDF](https://github.com/williamjameshandley/outreach/raw/intro_to_astro_2013/will_handley_intro_to_astro_2013.pdf)
+    - [source](https://github.com/williamjameshandley/outreach/tree/intro_to_astro_2013)
+    - _29 May 2013_
+16. The universe in 15 minutes
+    - Short-format variant, 2013
     - [PDF](https://github.com/williamjameshandley/outreach/raw/universe_15min_2013/will_handley_universe_15min_2013.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/universe_15min_2013)
     - _2013_
-16. Cosmology: The physics of the universe
-    - Public lecture
-    - [PDF](https://github.com/williamjameshandley/outreach/raw/intro_to_astro_2013/will_handley_intro_to_astro_2013.pdf)
-    - [source](https://github.com/williamjameshandley/outreach/tree/intro_to_astro_2013)
-    - _Mar 2013_
+17. Cosmology
+    - Alleyn's School, London
+    - [PDF](https://github.com/williamjameshandley/outreach/raw/alleyns_2012/will_handley_alleyns_2012.pdf)
+    - [source](https://github.com/williamjameshandley/outreach/tree/alleyns_2012)
+    - _26 Sep 2012_
