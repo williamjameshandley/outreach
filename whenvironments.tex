@@ -1,0 +1,58 @@
+\usepackage{matplotlibcolors}
+% Define an environment for a slide with a background image
+\newenvironment{frameb}[2]
+{	
+	\IfEqCase{#1}{ 	% use the first argument to determine
+			% whether to fit to height or to width
+			%
+	{h}		% fit to height
+	{\usebackgroundtemplate{\includegraphics[height=\paperheight]{#2}}}
+	{w}		% fit to width 
+	{\usebackgroundtemplate{\includegraphics[width=\paperwidth]{#2}}}
+			% error message:
+	{\PackageError{frameb}{Undefined option to frameb: #1 first argument must either be h to stretch to height, or w to stretch to width}
+	}}
+	\begin{frame}   
+}
+{
+	\end{frame}  
+}
+
+% Define an environment for a slide with a background image drawn by tikz
+\newenvironment{framet}[3]
+{	
+% re-set the background... 
+\setbeamertemplate{background}{
+% ... as a TikZ box, with unitz re-scaled to 4:3 units
+\begin{tikzpicture}[x=0.25\paperwidth,y=0.33333333\paperheight]
+%
+% If we want to put an image as well, then you should put:
+\IfEqCase{#1}{
+{h}    % Fit to height
+{
+\node[inner sep=0pt, anchor=south west] at (0,0) {\includegraphics[height=\paperheight]{#2}};
+}
+{w}    % Fit to width
+{
+\node[inner sep=0pt, anchor=north west] at (0,3) {\includegraphics[width=\paperwidth]{#2}};
+}
+{n}    % No background image
+{}
+{\PackageError{framet}{Undefined option to framet: #1 first argument must either be h to stretch to height, w to stretch to width, or n for no background image}
+}
+}
+% Now the rest of the TikZ code
+#3
+%
+% Finish the Tikz background
+\end{tikzpicture}
+%
+}   % done setting the background
+%
+% Now begin the frame
+	\begin{frame}   
+}
+{
+% close off the frame
+	\end{frame}  
+}
