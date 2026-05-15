@@ -1,10 +1,10 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[CMB to Astro]
+{The cosmic microwave background}
+\subtitle{Our probe of the birth of the universe}
+\date[07.04.16]
+{7\textsuperscript{th} April 2016}
 
 % Address
 \input{whaddress.tex}
@@ -19,15 +19,180 @@
 \input{whenvironments.tex}
 
 
+
+
 \begin{document}
+
+\begin{frameb}{w}{Images/milky_way.jpg}
+\end{frameb}
 
 \begin{frame}
   \titlepage{}
 \end{frame}
 
+\section{What is Cosmology?}
+\input{what_is_cosmology/questions.tex}
+
+\section{What is the cosmic microwave background?}
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+  \frametitle{The Cosmic Microwave Background (CMB)}
+  \framesubtitle{What is it?}
+  \pause{}
+  \begin{description}
+    \item[School:] ``The afterglow of the big bang''\pause{}
+    \item[Reality:] Our direct image of the early universe
+  \end{description}
+  \end{frame}
+
+\section{Our Place in the Cosmos}
+\input{zoom_out/to_the_cmb}
+
+
+\begin{frame}
+  \frametitle{Anisotropies in the CMB}
+  \framesubtitle{A more interesting picture}
+
+  \begin{overlayarea}{\textwidth}{\textheight}
+
+    \only<1-2>{%
+      \includegraphics[width=\textwidth]{Images/Mollweide-projection.png}
+    }
+    \only<3-4>{%
+      \includegraphics[width=\textwidth]{Images/Milky_Way_infrared.png}
+    }
+    \only<5-6>{%
+      \includegraphics[width=\textwidth]{Images/monopole.jpg}
+    }
+    \only<7-12>{%
+      \includegraphics[width=\textwidth]{Images/cobe_1.png}
+    }
+    \only<13-13>{%
+      \includegraphics[width=\textwidth]{Images/COBE.png}
+    }
+    \only<14-14>{%
+      \includegraphics[width=\textwidth]{Images/wmap.png}
+    }
+    \only<15-15>{%
+      \includegraphics[width=\textwidth]{Images/planckdata.jpg}
+    }
+
+    \only<-4>{%
+    \begin{itemize}
+      \only<2>{\item Map of the earth}
+      \only<4>{\item Map of the sky}
+    \end{itemize}
+  }
+
+    \only<5-9>{%
+    \begin{itemize}
+      \only<6-9>{\item `Subtract off' the constant source.}
+      \only<8-9>{\item COBE microwave satellite (1992)}
+      \only<9>{\item These direction-dependent deviations are called {\em Anisotropies} }
+    \end{itemize}
+  }
+
+    \only<10-12>{%
+    \begin{enumerate}
+      \only<10-12>{\item Galaxy in the middle}
+      \only<11-12>{\item One half hotter than the other}
+      \only<12-12>{\item Additional fluctuations}
+    \end{enumerate}
+  }
+
+  \only<13>{%
+    \begin{itemize}
+      \only<13>{\item COBE (1992)}
+    \end{itemize}
+  }
+
+  \only<14>{%
+    \begin{itemize}
+      \only<14>{\item WMAP (2001--2010)}
+    \end{itemize}
+  }
+
+  \only<15>{%
+    \begin{itemize}
+      \only<15>{\item Planck (2009--2013)}
+    \end{itemize}
+  }
+
+  \end{overlayarea}
+
 \end{frame}
+
+\begin{frame}
+  \frametitle{How do we study the CMB?}
+  \framesubtitle{The Planck satellite}
+  \centerline{%
+    \includegraphics<1>[width=\textwidth]{Images/planck_CMB.jpg}
+    \includegraphics<2>[height=0.8\textheight]{Images/L2.jpg}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Why do we study the CMB?}
+
+  \begin{overlayarea}{\textwidth}{\textheight}
+
+    \only<1-5>{%
+      \includegraphics[width=\textwidth]{Images/planckdata.jpg}
+    }
+
+    \only<6-7>{%
+      \centerline{%
+        \includegraphics[width=0.9\textwidth]{Images/seed_structure.jpg}
+      }
+    }
+    \only<8->{%
+      \centerline{%
+        \includegraphics[width=0.9\textwidth]{Images/evolution.png}
+      }
+    }
+
+    \only<1-3>{%
+      \begin{itemize}
+        \only<2-3>{\item Direct image of $300,000$ year-old universe}
+        \only<3>{\item Red $\Rightarrow$ higher density}
+      \end{itemize}
+    }
+
+    \only<4->{%
+      \begin{itemize}
+        \only<4->{\item Anisotropies are interesting for two reasons:}
+      \end{itemize}
+      \begin{enumerate}
+        \only<5->{\item Seeds of cosmic structure}
+        \only<7->{\item Created by the quantum-mechanical universe}
+      \end{enumerate}
+    }
+  \end{overlayarea}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Science from the CMB}
+  \framesubtitle{The amount of dark matter and dark energy}
+  \centerline{%
+    \includegraphics[width=0.7\textwidth]{Images/posterior}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{More science to come}
+  \framesubtitle{Polarisation}
+  \centerline{%
+    \includegraphics<2->[width=\textwidth]{Images/polarisation}
+  }
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+  \centerline{%
+    \includegraphics[width=0.9\textwidth]{Images/evolution.png}
+  }
+\end{frame}
+
+\againframe<7>{what_is_cosmology}
 
 \end{document}
