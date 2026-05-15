@@ -1,13 +1,18 @@
-\documentclass{beamer}
+\documentclass[aspectratio=169]{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[CMB]%(optional, only for long titles)
+{The James Webb Space Telescope}
+\subtitle{``Hubble 2.0''}
+\date[21.09.2018] % (optional)
+{31\textsuperscript{st} October 2022}
 
 % Address
 \input{whaddress.tex}
+\institute[University of Cambridge] % (optional)
+{%
+    Gonville \& Caius College\\
+    Cavendish Astrophysics Group
+}
 
 % Packages
 \input{whpackages.tex}
@@ -21,13 +26,417 @@
 
 \begin{document}
 
+
+
+\begin{frameb}{w}{jwst/PRI_220088795.jpg}
+\end{frameb}
+
 \begin{frame}
   \titlepage{}
 \end{frame}
 
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+    \frametitle{Disclaimers}
+    \begin{itemize}
+        \item I am not on the JWST team
+            \begin{itemize}
+                \item like every astronomer it will continue to have a large impact for many decades
+            \end{itemize}
+        \item JWST has been taking images for half a year now, but only a fraction of them are public
+        \item This talk is designed to give you a framework to interpret any news stories
+        \item Hope for a more new-science focussed talk next year.
+        \item Structure of talk
+            \begin{enumerate}
+                \item Orienting our place in the universe
+                \item Description of the JWST observatory
+                \item Discussion of the science it is interested in
+                \item Latest pictures from JWST
+            \end{enumerate}
+    \end{itemize}
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+        \column{0.49\textwidth}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+            \column{0.49\textwidth}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_3.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+            \column{0.49\textwidth}
+            \begin{columns}
+                \column{0.49\textwidth}
+                \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+                \column{0.49\textwidth}
+            \end{columns}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_4.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_3.jpg}
+            \column{0.49\textwidth}
+            \begin{columns}
+                \column{0.49\textwidth}
+                \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+                \column{0.49\textwidth}
+                \begin{columns}
+                    \column{0.49\textwidth}
+                    \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+                    \column{0.49\textwidth}
+                \end{columns}
+            \end{columns}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_5.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_4.jpg}
+            \column{0.49\textwidth}
+            \begin{columns}
+                \column{0.49\textwidth}
+                \includegraphics[width=\textwidth]{jwst/zoom_3.jpg}
+                \column{0.49\textwidth}
+                \begin{columns}
+                    \column{0.49\textwidth}
+                    \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+                    \column{0.49\textwidth}
+                    \begin{columns}
+                        \column{0.49\textwidth}
+                        \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+                        \column{0.49\textwidth}
+                    \end{columns}
+                \end{columns}
+            \end{columns}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_6.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_5.jpg}
+            \column{0.49\textwidth}
+            \begin{columns}
+                \column{0.49\textwidth}
+                \includegraphics[width=\textwidth]{jwst/zoom_4.jpg}
+                \column{0.49\textwidth}
+                \begin{columns}
+                    \column{0.49\textwidth}
+                    \includegraphics[width=\textwidth]{jwst/zoom_3.jpg}
+                    \column{0.49\textwidth}
+                    \begin{columns}
+                        \column{0.49\textwidth}
+                        \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+                        \column{0.49\textwidth}
+                        \begin{columns}
+                            \column{0.49\textwidth}
+                            \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+                            \column{0.49\textwidth}
+                        \end{columns}
+                    \end{columns}
+                \end{columns}
+            \end{columns}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_7.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_6.jpg}
+            \column{0.49\textwidth}
+            \begin{columns}
+                \column{0.49\textwidth}
+                \includegraphics[width=\textwidth]{jwst/zoom_5.jpg}
+                \column{0.49\textwidth}
+                \begin{columns}
+                    \column{0.49\textwidth}
+                    \includegraphics[width=\textwidth]{jwst/zoom_4.jpg}
+                    \column{0.49\textwidth}
+                    \begin{columns}
+                        \column{0.49\textwidth}
+                        \includegraphics[width=\textwidth]{jwst/zoom_3.jpg}
+                        \column{0.49\textwidth}
+                        \begin{columns}
+                            \column{0.49\textwidth}
+                            \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+                            \column{0.49\textwidth}
+                            \begin{columns}
+                                \column{0.49\textwidth}
+                                \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+                                \column{0.49\textwidth}
+                            \end{columns}
+                        \end{columns}
+                    \end{columns}
+                \end{columns}
+            \end{columns}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{You are here}
+    \begin{columns}
+        \column{0.49\textwidth}
+        \includegraphics[width=\textwidth]{jwst/zoom_8.jpg}
+        \column{0.49\textwidth}
+        \begin{columns}
+            \column{0.49\textwidth}
+            \includegraphics[width=\textwidth]{jwst/zoom_7.jpg}
+            \column{0.49\textwidth}
+            \begin{columns}
+                \column{0.49\textwidth}
+                \includegraphics[width=\textwidth]{jwst/zoom_6.jpg}
+                \column{0.49\textwidth}
+                \begin{columns}
+                    \column{0.49\textwidth}
+                    \includegraphics[width=\textwidth]{jwst/zoom_5.jpg}
+                    \column{0.49\textwidth}
+                    \begin{columns}
+                        \column{0.49\textwidth}
+                        \includegraphics[width=\textwidth]{jwst/zoom_4.jpg}
+                        \column{0.49\textwidth}
+                        \begin{columns}
+                            \column{0.49\textwidth}
+                            \includegraphics[width=\textwidth]{jwst/zoom_3.jpg}
+                            \column{0.49\textwidth}
+                            \begin{columns}
+                                \column{0.49\textwidth}
+                                \includegraphics[width=\textwidth]{jwst/zoom_2.jpg}
+                                \column{0.49\textwidth}
+                                \begin{columns}
+                                    \column{0.49\textwidth}
+                                    \includegraphics[width=\textwidth]{jwst/zoom_1.jpg}
+                                    \column{0.49\textwidth}
+                                \end{columns}
+                            \end{columns}
+                        \end{columns}
+                    \end{columns}
+                \end{columns}
+            \end{columns}
+        \end{columns}
+    \end{columns}
+\end{frame}
+
+\begin{frameb}{w}{Images/galaxyevolution.jpg}
+\end{frameb}
+
+\begin{frame}
+    \centerline{%
+        \includegraphics[height=\textheight]{Images/modern.jpg} 
+}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Statistics}
+    \begin{columns}
+        \column{0.5\textwidth}
+        \begin{description}
+            \item[Where] Second lagrange point (L2)
+            \item[When] 5-10 year lifetime
+            \item[Size] 
+                \begin{itemize}
+                    \item 6.5 meter mirror ($2.5\times$ Hubble [$6\times$ area])
+                    \item Tennis court sized sunshield
+                \end{itemize}
+            \item[How] Infrared 
+            \item[How much?] \$10 billion
+            \item[How far?] $\sim13.6$ billion years ago
+        \end{description}
+        \column{0.45\textwidth}
+        \includegraphics[width=0.49\textwidth]{jwst/sts61inspace_full.jpg}
+        \includegraphics[width=0.49\textwidth]{jwst/s125e012033_1.jpg}
+        \includegraphics[width=\textwidth]{jwst/BsCblaWrn6ieOJg-XTMyCuER6TRGX4kdlyvUJA_PWA0.jpg}
+
+    \end{columns}
+\end{frame}
+
+
+\begin{frameb}{w}{jwst/unfolding.jpg}
+\end{frameb}
+
+\begin{frame}
+    \includegraphics[width=\textwidth]{jwst/L2_rendering.jpg}
+\end{frame}
+
+\begin{frame}
+    \includegraphics[width=\textwidth]{jwst/JWST-Spectrums.jpg}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Science on the JWST}
+    As a space-based observatory it aims to
+    \begin{itemize}
+        \item to search for light from the first stars and galaxies that formed in the universe after the Big Bang
+        \item to study galaxy formation and evolution
+        \item to understand star formation and planet formation
+        \item to study planetary systems and the origins of life
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Scientific instruments}
+    \begin{itemize}
+        \item 17 different ``modes'' spread across 4 instruments
+    \end{itemize}
+    \begin{description}
+        \item[NIRCam] Near Infrared Camera (10$\times$4MegaPixels HgCdTe)
+            \begin{itemize}
+                \item Most of front-page images are with this in its camera mode
+                \item Also a spectrometer \& coronograph
+                \item 29 filters \& resolutions
+                \item Cooled to 37K by sunshield
+            \end{itemize}
+        \item[NIRSpec] Near Infrared Spectrograph. (2$\times$4MegaPixels). \\
+            \begin{itemize}
+                \item Three resolution modes in grating wheel assembly + 5 filters
+            \end{itemize}
+        \item[MIRI] Mid-Infrared instrument
+            \begin{itemize}
+                \item Cooled to $<$7K by cryocooler
+                \item Builds on legacy of Hubble + coronography
+            \end{itemize}
+        \item[NIRISS] Near Infrared Imager and Slitless Spectrograph
+            \begin{itemize}
+                \item Single object spectroscopy
+                \item Aperture masking interferometry
+                \item Backup to NIRCam
+            \end{itemize}
+    \end{description}
+\end{frame}
+
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics<1>[width=0.6\textwidth]{jwst/Jupiter_and_Europa_(NIRCam)_Commissioning_Image.jpg}%
+%        \includegraphics<2>[width=0.6\textwidth]{jwst/Webb’s_Jupiter_Images_Showcase_Auroras,_Hazes.png}%
+%        \includegraphics<3>[width=0.6\textwidth]{jwst/Webb’s_Jupiter_Images_Showcase_Auroras,_Hazes_-_52302207952.png}%
+%    \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics<1>[width=0.62\textwidth]{jwst/New_Webb_Images_Capture_Rare_View_of_Neptune’s_Rings_-_52374360534.png}
+%        \includegraphics<2>[width=0.62\textwidth]{jwst/New_Webb_Images_Capture_Rare_View_of_Neptune’s_Rings_(Labeled).png}
+%    \end{center}
+%\end{frame}
+%\begin{frameb}{w}{jwst/Tarantula_Nebula_by_JWST.jpg}
+%\end{frameb}
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics[width=0.82\textwidth]{jwst/A_Cosmic_Tarantula_by_NASA’s_James_Webb_Space_Telescope.png}
+%    \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics[width=\textwidth]{jwst/stsci-01gfnr1kzzp67ffgv8y26kr0vw.png}
+%    \end{center}
+%\end{frame}
+%
+%\begin{frame}
+%    \includegraphics[width=\textwidth]{jwst/WASP-96b_spectrum_(JWST).jpg}
+%\end{frame}
+%
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics<1>[width=0.62\textwidth]{jwst/Cartwheel_Galaxy_JWST_MIRI_Full_Res.png}
+%        \includegraphics<2>[width=0.62\textwidth]{jwst/Cartwheel_Galaxy_JWST_NIRCam_Full_Res.png}
+%        \includegraphics<3>[width=0.62\textwidth]{jwst/Cartwheel_Galaxy_JWST_NIRCam+MIRI_Full_Res.png}
+%    \end{center}
+%\end{frame}
+%
+%\begin{frameb}{w}{jwst/ir_galaxy.jpg}
+%\end{frameb}
+%
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics<1>[width=0.62\textwidth]{jwst/NASA’s_Webb_Sheds_Light_on_Galaxy_Evolution,_Black_Holes.png}
+%        \includegraphics<2>[width=0.62\textwidth]{jwst/Stephan's_Quintet_as_seen_by_JWST's_NIRCAM.png}
+%        \includegraphics<3>[width=0.62\textwidth]{jwst/Stephan's_Quintet_taken_by_James_Webb_Space_Telescope.jpg}
+%    \end{center}
+%\end{frame}
+%
+%
+%\begin{frame}
+%    \begin{center}
+%        \includegraphics[width=0.9\textwidth]{jwst/Webb’s_First_Deep_Field_(MIRI_and_NIRCam_Images_Side_by_Side).png}
+%    \end{center}
+%\end{frame}
+%
+%
+%
+%\begin{frameb}{w}{jwst/ELT4k-4-comp-Open.jpg}
+%    \frametitle{European Extremely Large Telescope}
+%\end{frameb}
+%
+%\begin{frameb}{w}{Images/ska.jpg}
+%    \frametitle{Square Kilometer Array}
+%\end{frameb}
+%
+%\begin{frame}
+%    \frametitle{LIGO/LISA/Einstein telescopes}
+%  \centerline{%
+%      \includegraphics[width=0.49\textwidth]{jwst/LIGO}
+%      \includegraphics[width=0.49\textwidth]{jwst/LISA}
+%  }
+%\end{frame}
+%
+%\begin{frameb}{w}{Images/jwst.jpg}
+%\end{frameb}
+
+
+
 \end{document}
+
+
