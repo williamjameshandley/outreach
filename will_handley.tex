@@ -1,10 +1,10 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[CMB]%(optional, only for long titles)
+{The Cosmic Microwave Background}
+\subtitle{Our probe of the birth of the universe}
+\date[14.10.13] % (optional)
+{20\textsuperscript{th} March 2013}
 
 % Address
 \input{whaddress.tex}
@@ -21,13 +21,229 @@
 
 \begin{document}
 
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+\end{frameb}
+
+
 \begin{frame}
   \titlepage{}
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+	\frametitle{Overview}
+	\tableofcontents
 \end{frame}
 
+
+\section{Light in astronomy}
+\begin{frame}
+  \frametitle{The Electromagnetic Spectrum}
+  \includegraphics[width=\textwidth]{Images/em_spectrum.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Redshift}
+  \begin{itemize}
+    \item<1-> Distant objects are {\em redder\/} than they should be.
+    \item<2-> Two things can cause this:
+      \begin{enumerate}
+        \item<3-> Doppler shift from objects moving away
+        \item<5-> Stretching by the expansion of the universe.
+      \end{enumerate}
+    \item<7-> Note; the redshift of distant galaxies is often (incorrectly) attributed to 1.
+  \end{itemize}
+  \includegraphics<4>[width=\textwidth]{Images/redshift.png}
+  \includegraphics<6>[width=\textwidth]{Images/t16_redshift.jpg}
+
+\end{frame}
+
+\section{The universe in microwaves}
+\begin{frame}
+  \frametitle{The Cosmic Microwave Background}
+
+  \begin{overlayarea}{\textwidth}{\textheight}
+
+    \only<1-2>{%
+      \includegraphics[width=\textwidth]{Images/Mollweide-projection.png}
+    }
+    \only<3-4>{%
+      \includegraphics[width=\textwidth]{Images/Milky_Way_infrared.png}
+    }
+    \only<5->{%
+      \includegraphics[width=\textwidth]{Images/monopole.jpg}
+    }
+
+    \begin{itemize}
+      \only<1-2>{\item A map of the Earth (Mollweide projection).}
+      \only<2-2>{\item Consider the same map, but looking out at the night sky.}
+      \only<3-4>{\item This image is taken in the infra-red waveband.}
+      \only<4->{\item Now look in the microwave band.}
+      \only<6- >{\item The sky is filled with the Cosmic Microwave Background radiation (CMB), coming in from all directions.}
+    \end{itemize}
+
+  \end{overlayarea}
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Cosmic Microwave Background}
+  \framesubtitle{Discovery}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item<1-> Discovered by accident in 1964 by Penzias \& Wilson.
+        \item<2-> Experimenting with a supersensitive detector.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics<1->[width=\textwidth]{Images/penzias_wilson.jpg}
+    \end{column}
+
+  \end{columns}
+\end{frame}
+
+\begin{frame}[t]
+  \frametitle{The Cosmic Microwave Background}
+  \framesubtitle{What is it?}
+
+  \begin{minipage}[t]{0.8\textwidth}
+    \vspace{0pt}
+    \begin{itemize}
+      \item<1-> $\sim13.8$ billion years ago the universe was much smaller.
+      \item<2-> The entire universe was as dense and hot as a star.
+      \item<3-> Plasma: Filled with unbound protons, neutrons, electrons and photons.
+      \item<4-> As the universe expanded, it cooled and eventually released these photons at the {\em epoch of recombination}.
+      \item<6-> ``Let there be light'' (X rays).
+      \item<7-> These X-rays have now been stretched to microwaves.
+    \end{itemize}
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.2\textwidth}
+    \vspace{0pt}
+      \includegraphics<1-4>[width=\textwidth]{Images/last_scattering1.jpg}
+      \includegraphics<5->[width=\textwidth]{Images/last_scattering2.jpg}
+  \end{minipage}
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{An Alternative Picture}
+  \includegraphics[width=\textwidth]{Images/Hubble_Ultra_Deep_Field_diagram.jpg}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Anisotropies in the CMB}
+  \framesubtitle{Looking for a more interesting picture}
+
+  \begin{overlayarea}{\textwidth}{\textheight}
+
+    \only<1-2>{%
+      \includegraphics[width=\textwidth]{Images/monopole.jpg}
+    }
+    \only<3->{%
+      \includegraphics[width=\textwidth]{Images/cobe.png}
+    }
+
+    \only<-4>{%
+    \begin{itemize}
+      \only<1-2>{\item Try to `subtract off' the constant source.}
+      \only<2-2>{\item COBE microwave satellite (1992)}
+      \only<3-4>{\item COBE's view of the universe }
+      \only<4>{\item These direction-dependent deviations are called {\em Anisotropies} }
+    \end{itemize}
+  }
+
+    \only<5->{%
+    \begin{enumerate}
+      \only<5->{\item Galaxy in the middle}
+      \only<6->{\item One half hotter than the other}
+      \only<7->{\item Additional fluctuations}
+    \end{enumerate}
+  }
+
+  \end{overlayarea}
+
+\end{frame}
+
+\begin{frameb}{w}{Images/wmap_cmb.png} 
+\end{frameb}
+\begin{frameb}{w}{Images/planck_cmb.png} 
+\end{frameb}
+\begin{frameb}{w}{Images/spt_cmb.png} 
+\end{frameb}
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+  \frametitle{The Beginning of time}
+  \framesubtitle{As seen by the Planck Satellite}
+\end{frameb}
+
+
+\section{How do we measure the CMB}
+\begin{frame}
+  \frametitle{How do we measure the CMB?}
+  \framesubtitle{Three methods}
+  \begin{enumerate}
+    \item<1-> From the ground.
+    \item<2-> From space.
+    \item<3-> From balloons.
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}
+  \frametitle{From the ground}
+  \framesubtitle{Atacama Cosmology Telescope (ACT)}
+  \includegraphics[width=\textwidth]{Images/ACT_telescope.jpg}
+\end{frame}
+\begin{frame}
+  \frametitle{From the ground}
+  \framesubtitle{South Pole Telescope (SPT)}
+  \includegraphics[width=\textwidth]{Images/SPT_telescope.jpg}
+  South Pole Telescope
+\end{frame}
+
+\begin{frame}
+  \frametitle{From Space}
+  \framesubtitle{COBE, WMAP, Planck}
+  \includegraphics[width=\textwidth]{Images/COBEWMAPPlanck.jpg}
+\end{frame}
+
+\begin{frame}
+  \frametitle{From Space}
+  \framesubtitle{COBE, WMAP, Planck}
+  \includegraphics[width=\textwidth]{Images/L2.jpg}
+\end{frame}
+
+\begin{frame}
+  \frametitle{From Balloons}
+  \centerline{%
+  \includegraphics[height=\textheight]{Images/MAXIMA_Balloon.jpg}
+}
+\end{frame}
+
+\section{What does the CMB tell us}
+\begin{frame}[label=tell_us]
+  \frametitle{What does the CMB tell us?}
+  \begin{itemize}
+    \item<1-> The CMB is a crystal clear picture of the universe when it was only 300,000 years old (epoch of recombination).
+    \item<2-> It therefore provides a unique insight into the birth of the universe.
+    \item<3-> It gives crucial data to suggest and rule out theories of the beginning of time.
+    \item<4-> More than this, modern astrophysics uses the CMB as a ``back light'' for the dark regions of the universe.
+  \end{itemize}
+\end{frame}
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+\end{frameb}
+
+\againframe<4>{tell_us}
+
+
+
+
+
 \end{document}
+
+
