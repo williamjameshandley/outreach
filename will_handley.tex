@@ -1,13 +1,18 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[CMB]%(optional, only for long titles)
+{Observing the big bang}
+\subtitle{A short history of nearly nothing}
+\date[21.09.2018] % (optional)
+{21\textsuperscript{st} September 2018}
 
 % Address
 \input{whaddress.tex}
+\institute[University of Cambridge] % (optional)
+{%
+    Gonville \& Caius College\\
+    Cavendish Astrophysics Group
+}
 
 % Packages
 \input{whpackages.tex}
@@ -21,13 +26,75 @@
 
 \begin{document}
 
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+\end{frameb}
+
+
 \begin{frame}
   \titlepage{}
 \end{frame}
 
+\section{What is Cosmology?}
+\input{what_is_cosmology/questions.tex}
+
+\section{Lightning introduction to cosmology}
+
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+    \frametitle{Lightning introduction to cosmology}
+    \framesubtitle{Three pillars of modern cosmology}
+    \begin{enumerate}
+        \pause\item Redshifted galaxies
+        \pause\item Cosmic Microwave Background
+        \pause\item Big Bang Nucleosynthesis
+    \end{enumerate}
+    \begin{itemize}
+            \pause\item Lead us to the conclusion that the universe is expanding\ldots
+            \pause\item \ldots and was once in a hot, dense state.
+    \end{itemize}
 \end{frame}
 
+\input{expansion/expansion.tex}
+
+
+\section{Viewing the cosmos in 4 dimensions}
+\input{zoom_out/to_the_cmb.tex}
+
+
+\section{The Birth of the Universe}
+
+\input{cmb/anisotropies_extended}
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+\end{frameb}
+
+\begin{frame}
+  \frametitle{The CMB}
+  \framesubtitle{Our window onto the early universe}
+  \centerline{%
+    \includegraphics[width=\paperwidth]{Images/History_of_the_Early_Universe.png}
+  }
+\end{frame}
+
+
+\input{dark_matter/dark_matter_brief.tex}
+\input{dark_energy/dark_energy_brief.tex}
+\input{hubble_tension/hubble_tension_brief.tex}
+
+\input{instrumentation/EELT_brief.tex}
+\input{instrumentation/SKA_brief.tex}
+\input{instrumentation/JWST_brief.tex}
+
+
+\begin{frameb}{h}{Images/polarisation.jpg}
+\end{frameb}
+
+\againframe{what_is_cosmology}
+
+ 
+
+
+
 \end{document}
+
+
