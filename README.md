@@ -86,12 +86,7 @@ For academic talks see [williamjameshandley/talks](https://github.com/williamjam
     - [PDF](https://github.com/williamjameshandley/outreach/raw/intro_to_astro_2013/will_handley_intro_to_astro_2013.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/intro_to_astro_2013)
     - _29 May 2013_
-17. The universe in 15 minutes
-    - Short-format variant, 2013
-    - [PDF](https://github.com/williamjameshandley/outreach/raw/universe_15min_2013/will_handley_universe_15min_2013.pdf)
-    - [source](https://github.com/williamjameshandley/outreach/tree/universe_15min_2013)
-    - _2013_
-18. Cosmology
+17. Cosmology
     - Alleyn's School, London
     - [PDF](https://github.com/williamjameshandley/outreach/raw/alleyns_2012/will_handley_alleyns_2012.pdf)
     - [source](https://github.com/williamjameshandley/outreach/tree/alleyns_2012)
