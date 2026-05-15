@@ -1,13 +1,18 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[CMB]%(optional, only for long titles)
+{Cosmology}
+\subtitle{A Scientist's history of the Universe}
+\date[21.09.2018] % (optional)
+{21\textsuperscript{st} September 2018}
 
 % Address
 \input{whaddress.tex}
+\institute[University of Cambridge] % (optional)
+{%
+    Gonville \& Caius College\\
+    Cavendish Astrophysics Group
+}
 
 % Packages
 \input{whpackages.tex}
@@ -21,13 +26,208 @@
 
 \begin{document}
 
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+\end{frameb}
+
+
 \begin{frame}
   \titlepage{}
 \end{frame}
 
-\begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+\section{What is Cosmology?}
+
+\begin{frame}[label=what_is_cosmology]
+	\frametitle{What is Cosmology?}
+	\framesubtitle{Cosmology is the study of the universe as a whole}
+	\begin{description}
+		\item[Age:]{How old is the universe?}
+		\item[Birth:]{Is there a beginning of time? What was it like?}
+		\item[Fate:]{Will everything come to an end?}
+		\item[Size:]{How big is the cosmos? Is there an edge?}
+		\item[Shape:]{What happens as you travel across the universe?}
+		\item[Content:]{What are Dark Matter and Dark Energy?}
+	\end{description}
 \end{frame}
 
+\section{Lightning introduction to cosmology}
+
+\begin{frameb}{h}{Images/night_skype.jpg} 
+\end{frameb}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[height=\textheight]{Images/Ptolemaicsystem-small-negate.png} 
+}
+\end{frame}
+
+\begin{frameb}{h}{Images/retrograde.jpg} 
+\end{frameb}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[height=\textheight]{Images/Epicycles-negate.jpg} 
+}
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[height=\textheight]{Images/copernicus-negate.jpg} 
+}
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[width=\textwidth]{Images/orbital_elements.png} 
+}
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+        \includegraphics[width=0.5\textwidth]{Images/perihelion.png}
+        \only<1>{%
+            \includegraphics[height=\textheight]{Images/young_einstein.jpg} 
+        }
+        \only<2>{%
+            \includegraphics[height=\textheight]{Images/nobel_einstein.png} 
+        }
+        \only<3>{%
+            \includegraphics[height=\textheight]{Images/old_einstein.jpg} 
+        }
+}
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[width=\textwidth]{Images/11warp-spacetime.jpg} 
+}
+\end{frame}
+
+\begin{frameb}{h}{Images/expansion/16.png} \end{frameb}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[width=\textwidth]{Images/hubble_orig-negate.jpg} 
+}
+\end{frame}
+\begin{frame}
+    \centerline{%
+    \includegraphics[width=\textwidth]{Images/distance_ladder-negate.jpg} 
+}
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[width=\textwidth]{Images/steady_state-negate.jpg} 
+}
+\end{frame}
+
+
+\begin{frame}
+    \centerline{%
+    \includegraphics<1->[width=\textwidth]{Images/penzias_wilson.jpg}
+}
+\end{frame}
+
+
+%\input{expansion/expansion.tex}
+
+
+\section{Viewing the cosmos in 4 dimensions}
+\input{zoom_out/to_the_cmb.tex}
+
+
+\begin{frame}
+    \centerline{%
+        \includegraphics[height=\textheight]{Images/modern.jpg} 
+}
+\end{frame}
+
+\section{The Birth of the Universe}
+
+\begin{frame}
+  \centerline{%
+    \includegraphics[width=\paperwidth]{Images/History_of_the_Early_Universe.png}
+  }
+\end{frame}
+
+%\begin{frame}
+%
+%    \only<1>{%
+%      \includegraphics[width=\textwidth]{Images/Mollweide-projection.png}
+%    }
+%    \only<2>{%
+%      \includegraphics[width=\textwidth]{Images/Milky_Way_infrared.png}
+%    }
+%    \only<3>{%
+%      \includegraphics[width=\textwidth]{Images/monopole.jpg}
+%    }
+%    \only<4>{%
+%      \includegraphics[width=\textwidth]{Images/cobe_1.png}
+%    }
+%    \only<5>{%
+%      \includegraphics[width=\textwidth]{Images/COBE.png}
+%    }
+%    \only<6>{%
+%      \includegraphics[width=\textwidth]{Images/wmap.png}
+%    }
+%    \only<7>{%
+%      \includegraphics[width=\textwidth]{Images/planckdata.jpg}
+%    }
+%      \vfill
+%
+%\end{frame}
+
+\begin{frame}
+  \centerline{%
+      \includegraphics[width=0.65\textwidth]{Images/NGC.jpg}
+      \includegraphics[width=0.35\textwidth]{Images/zwicky.jpg}
+  }
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+    \includegraphics[width=\textwidth]{Images/tycho.jpg} 
+}
+\end{frame}
+
+\begin{frame}
+    \centerline{%
+        \includegraphics[width=0.5\textwidth]{Images/H0.png} 
+        \includegraphics[width=0.5\textwidth]{Images/s8.png} 
+}
+\end{frame}
+
+
+\begin{frame}
+  \centerline{%
+    \includegraphics[width=\textwidth]{Images/E-ELT.jpg}
+  }
+\end{frame}
+
+\begin{frame}
+  \centerline{%
+      \includegraphics[width=\textwidth]{Images/ska.jpg}
+  }
+\end{frame}
+
+\begin{frame}
+  \centerline{%
+      \includegraphics[width=\textwidth]{Images/jwst.jpg}
+  }
+\end{frame}
+
+
+
+\begin{frameb}{h}{Images/polarisation.jpg}
+\end{frameb}
+
+\againframe{what_is_cosmology}
+
+ 
+
+
+
 \end{document}
+
+
