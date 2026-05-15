@@ -1,10 +1,10 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[Astrophysics]%(optional, only for long titles)
+{Inflation}
+\subtitle{Extreme expansion in the very earliest universe}
+\date[19.03.14] % (optional)
+{19\textsuperscript{th} March 2014}
 
 % Address
 \input{whaddress.tex}
@@ -18,16 +18,71 @@
 % Environments
 \input{whenvironments.tex}
 
-
 \begin{document}
 
-\begin{frame}
-  \titlepage{}
-\end{frame}
 
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+  \titlepage
 \end{frame}
+
+\input{zoom_out/years_brief.tex}
+
+\input{cmb/anisotropies_brief.tex}
+
+
+\input{inflation/firstlight.tex} % WARNING, this takes a while (15 mins) to compile (consider remaking)
+
+
+\begin{frame}
+  \frametitle{The issue with uniformity}
+  \framesubtitle{Thermal equilibrium}
+
+  \includegraphics[width=0.5\textwidth]{Images/teacup.jpg}
+  \begin{itemize}
+    \item The early universe appears to be in {\em thermal equilibrium.}
+  \end{itemize}
+\end{frame}
+
+
+\againframe<12->{firstlight}
+
+
+\input{inflation/motivation_brief.tex}
+
+
+
+
+\input{inflation/anisotropies.tex}
+
+
+\input{inflation/explaining_wiggles.tex}
+
+
+\input{inflation/theory_brief.tex}
+
+\input{kinetic_dominance/kinetic_dominance_brief.tex}
+
+\input{instrumentation/BICEP2.tex}
+
+
+
+\begin{frameb}{w}{Images/Planck-Map.jpg}
+  \frametitle{Thank you!}
+  \framesubtitle{Questions?}
+\end{frameb}
+
+
+
+
+
+
+
+
+
+
+
+
 
 \end{document}
+
+

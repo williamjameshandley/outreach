@@ -1,0 +1,43 @@
+
+\begin{frame}
+  \frametitle{Theory of Inflation}
+  \framesubtitle{An accelerated phase}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+
+      \begin{tikzpicture}
+        \begin{axis}[
+            ticks=none,
+            width=\textwidth,
+            height=0.8\textheight,
+            xmin=0,xmax=4,
+            ymin=-2.3,ymax=2.3,
+          ]
+          \addplot [samples=50]{1+tanh(x-2)}; 
+          \addplot [samples=50]{-1-tanh(x-2)}; 
+        \end{axis}
+      \end{tikzpicture}
+
+    \end{column}
+    \begin{column}{0.6\textwidth}
+
+      \begin{itemize}
+        \item<1-> What could generate this?
+        \item<2-> A scalar field $\phi$ 
+        \item<3-> The inflaton:
+        \item<4-> Why scalars?
+          \begin{itemize}
+            \item<5-> Simple.
+            \item<6-> Cosmological Principle.
+            \item<7-> Effective field theory.
+          \end{itemize}
+        \item<8-> The issue: We have very little idea precisely what it looks like.
+      \end{itemize}
+
+
+
+    \end{column}
+  \end{columns}
+
+\end{frame}
+

@@ -1,0 +1,214 @@
+% Put in some details of the colors involved
+\def\numstar{10}
+\definecolor{starcol}{RGB}{255,255,0}
+\definecolor{redstarcol}{RGB}{255,150,0}
+\definecolor{redderstarcol}{RGB}{255,50,0}
+\definecolor{darkredcol}{RGB}{175,0,0}
+
+\begin{frame}<1-11>[label=firstlight]
+  \frametitle{The Cosmic Microwave Background}
+  \framesubtitle{The first light of the universe}
+
+
+  \begin{overlayarea}{\textwidth}{\textheight}
+    \begin{columns}
+
+      \begin{column}{0.3\textwidth}
+
+        \only<3-11>{%
+          \begin{itemize}
+            \only<3-10>{\item Looking outward $=$ looking back in time }
+            \only<6-10>{\item Eventually, universe becomes `solid' }
+            \only<8-10>{\item Boundary $=$ \\ ``surface of last scattering''. }
+            \only<9-10>{\item Photons propagate freely }
+            \only<11>{\item This is observed as the CMB }
+          \end{itemize}
+        }
+
+        \only<12->{%
+          \begin{itemize}
+            \only<12->{\item How causally connected is the CMB? }
+            \only<13->{\item Naive cosmology: }
+            \only<16->{\item Not enough! }
+            \only<17->{\item Early acceleration increases patch size. }
+            \only<21->{\item Inflation! }
+          \end{itemize}
+        }
+      \end{column}
+
+      \begin{column}{0.7\textwidth}
+        \makebox[\textwidth][c]{%
+          \resizebox{8.0cm}{!}{%
+            \begin{tikzpicture} [
+                declare function={s(\a,\x)=\a * sin(\x);},
+                declare function={c(\a,\x)=\a * cos(\x);},
+              ]                 
+
+              \draw<2-> (0,0) node {$E$};
+
+            % First ring: starcol
+              \pgfmathsetseed{0001};
+              \draw<2-> plot [
+                only marks,
+                mark=*,
+                mark options={color=starcol},
+                samples=5*\numstar,
+                mark size=0.75,
+                domain=0:360
+              ] 
+              (
+              {0.5 *(s(1,\x) + s(2,\x))+0.45 *rand * (s(2,\x)-s(1,\x))}
+              ,
+              {0.5 *(c(1,\x) + c(2,\x))+0.5 *rand * (c(2,\x)-c(1,\x))}
+              )
+              ;
+
+              \draw<2-> [starcol] (0,0) circle[radius=2];
+
+            % second ring: redstarcol
+              \pgfmathsetseed{0001};
+              \draw<4-> plot [
+                only marks,
+                mark=*,
+                mark options={color=redstarcol},
+                samples=5*6*\numstar,
+                mark size=0.75,
+                domain=0:360
+              ] 
+              (
+              {0.5 *(s(2,\x) + s(3,\x))+0.45 *rand * (s(3,\x)-s(2,\x))}
+              ,
+              {0.5 *(c(2,\x) + c(3,\x))+0.5 *rand * (c(3,\x)-c(2,\x))}
+              )
+              ;
+
+              \draw<4-> [redstarcol] (0,0) circle[radius=3];
+
+            % second ring: redderstarcol
+              \pgfmathsetseed{0001};
+              \draw<5-> plot [
+                only marks,
+                mark=*,
+                mark options={color=redderstarcol},
+                samples=5*16*\numstar,
+                mark size=0.75,
+                domain=0:360
+              ] 
+              (
+              {0.5 *(s(3,\x) + s(4,\x))+0.45 *rand * (s(4,\x)-s(3,\x))}
+              ,
+              {0.5 *(c(3,\x) + c(4,\x))+0.5 *rand * (c(4,\x)-c(3,\x))}
+              )
+              ;
+
+              \draw<5-> [redderstarcol] (0,0) circle[radius=4];
+
+
+              % Outer ring %%%%%%%%%%%%%%%
+              \begin{scope}[even odd rule]
+                \clip<7-> (0,0) circle[radius=4] (-5.5,-5.5) rectangle (5.5,5.5);
+                \fill<7->[darkredcol] (0,0) circle[radius=5.5];
+              \end{scope}
+
+
+
+              % Labels %%%%%%%%%%%%%%%%%%%
+              \draw<8-11> [->,thick] (0,4.5) -- (0,4);
+              \draw<8-11> (0,4.5) node [above] {Last scattering};
+
+
+              % Photons %%%%%%%%%%%%%%%%%%
+              \draw<10-11> [->,decorate,decoration=snake] (4,0) -- (0.5,0);
+              \draw<10-11> [->,decorate,decoration=snake] (-4,0) -- (-0.5,0);
+              \draw<10-11> [->,decorate,decoration=snake] (0,-4) -- (0,-0.5);
+              \draw<10-11> [->,decorate,decoration=snake] (0,4) -- (0,0.5);
+
+              \draw<14> [->,thick] (0,-5) -- (0,-5.5);
+              \draw<14> (0,-5) node [above] {Singularity};
+
+              % Naive photon lines %%%%%%%
+              \foreach \j in {30,90,150,210,270,330}{%
+                \only<15-16>{%
+                  \draw plot [domain=4:5.5] 
+                  (
+                  {0.3*sin(\j)*(\x-5.5)^2 +cos(\j)*\x}
+                  ,
+                  {-0.3*cos(\j)*(\x-5.5)^2+ sin(\j)*\x}
+                  )
+                };
+                \only<15-16>{%
+                  \draw plot [domain=4:5.5] 
+                  ({-0.3*sin(\j)*(\x-5.5)^2 +cos(\j)*\x}
+                  ,
+                  {0.3*cos(\j)*(\x-5.5)^2+ sin(\j)*\x}
+                  )
+                };
+              }
+
+              % Inflation photon lines %%%
+                \foreach \j in {30,90,150,210,270,330}{%
+                  \only<18>{%
+                    \draw plot [domain=3.8:5.5] 
+                    (
+                    {1.0*sin(\j)*sqrt(5.5-\x) +cos(\j)*\x}
+                    ,
+                    {-1.0*cos(\j)*sqrt(5.5-\x)+ sin(\j)*\x}
+                    )
+                  };
+                  \only<18>{%
+                    \draw plot [domain=3.8:5.5]
+                    (
+                    {-1.0*sin(\j)*sqrt(5.5-\x) +cos(\j)*\x}
+                    ,
+                    {1.0*cos(\j)*sqrt(5.5-\x)+ sin(\j)*\x}
+                    )
+                  };
+                }
+
+                \foreach \j in {30,90,150,210,270,330}{%
+                  \only<19>{%
+                    \draw plot [domain=3.8:5.5] 
+                    (
+                    {1.5*sin(\j)*sqrt(5.5-\x) +cos(\j)*\x}
+                    ,
+                    {-1.5*cos(\j)*sqrt(5.5-\x)+ sin(\j)*\x}
+                    )
+                  };
+                  \only<19>{%
+                    \draw plot [domain=3.8:5.5]
+                    (
+                    {-1.5*sin(\j)*sqrt(5.5-\x) +cos(\j)*\x}
+                    ,
+                    {1.5*cos(\j)*sqrt(5.5-\x)+ sin(\j)*\x}
+                    )
+                  };
+                }
+                \foreach \j in {30,90,150,210,270,330}{%
+                  \only<20->{%
+                    \draw plot [domain=3.8:5.5] 
+                    (
+                    {2.0*sin(\j)*sqrt(5.5-\x) +cos(\j)*\x}
+                    ,
+                    {-2.0*cos(\j)*sqrt(5.5-\x)+ sin(\j)*\x}
+                    )
+                  };
+                  \only<20->{%
+                    \draw plot [domain=3.8:5.5]
+                    (
+                    {-2.0*sin(\j)*sqrt(5.5-\x) +cos(\j)*\x}
+                    ,
+                    {2.0*cos(\j)*sqrt(5.5-\x)+ sin(\j)*\x}
+                    )
+                  };
+                }
+
+            \end{tikzpicture}
+          }
+        }
+      \end{column}
+    \end{columns}
+
+  \end{overlayarea}
+\end{frame}
+
+
