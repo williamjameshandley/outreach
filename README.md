@@ -1,5 +1,7 @@
-# Cosmology: a scientist's history of the universe
+# Cosmology: A Scientist's History of the Universe
 
-[[PDF](https://github.com/williamjameshandley/outreach/raw/sherrington_2022/will_handley_sherrington_2022.pdf)]
-[[source](https://github.com/williamjameshandley/outreach/tree/sherrington_2022)]
-_Oct 2022, Sherrington School_
+A broad introductory cosmology talk for the Sherrington Society, the science discussion society at Gonville & Caius College, Cambridge.
+
+[[PDF](https://github.com/williamjameshandley/outreach/raw/sherrington_2019/will_handley_sherrington_2019.pdf)]
+[[source](https://github.com/williamjameshandley/outreach/tree/sherrington_2019)]
+_11 February 2019, Sherrington Society, Gonville & Caius College, Cambridge_
