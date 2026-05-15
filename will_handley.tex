@@ -1,10 +1,10 @@
 \documentclass{beamer}
 
-\title[<+Short title+>]
-{<+Title+>}
-\subtitle{<+Subtitle+>}
-\date[<+Short date+>]
-{<+Date+>}
+\title[Astrophysics]%(optional, only for long titles)
+{Dark Matter and Dark Energy}
+\subtitle{The composition and fate of the universe}
+\date[20.03.13] % (optional)
+{\today}
 
 % Address
 \input{whaddress.tex}
@@ -21,13 +21,47 @@
 
 \begin{document}
 
-\begin{frame}
-  \titlepage{}
-\end{frame}
+
+\begin{frameb}{w}{Images/milky_way.jpg}
+\end{frameb}
+
 
 \begin{frame}
-  \frametitle{<+Frame title+>}
-  <+Frame content+>
+	\titlepage
 \end{frame}
+
+
+\begin{frame}
+	\frametitle{Overview}
+	\tableofcontents
+\end{frame}
+
+
+\section{Our Picture of the Universe}
+\input{what_is_cosmology/questions.tex}
+\input{zoom_out/to_the_cmb.tex}
+
+
+\section{The Big Bang}
+\input{the_big_bang/the_big_bang_briefer.tex}
+\begin{frameb}{w}{Images/spt_cmb.pdf} 
+\end{frameb}
+
+\input{current_issues/current_issues_brief.tex}
+\section{Dark Matter}
+\input{dark_matter/dark_matter_15.tex}
+
+\section{Dark Energy}
+\input{dark_energy/dark_energy_15.tex}
+
+\section{Composition and fate of the universe}
+\input{composition/composition_brief1.tex}
+\input{fate/fate.tex}
+
+
+\againframe<6>{what_is_cosmology}
+
 
 \end{document}
+
+
